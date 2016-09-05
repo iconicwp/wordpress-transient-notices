@@ -2,6 +2,8 @@
 
 A simple helper class that enables cross-page wordpress admin notices. This is especially useful if you want to show a notice after saving some information, like the `save_post` hook.
 
+The notices are stored using transients that expire as soon as they have been displayed.
+
 ## Usage
 
 Firstly, include or autoload the class file. Once that's done, you can trigger a notice like so:
