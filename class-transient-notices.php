@@ -65,7 +65,7 @@ class Iconic_Transient_Notices {
      */
     public function add_notice( $type = false, $message = false ) {
 
-        if( !$code || !$message )
+        if( !$type || !$message )
             return;
 
         $notices = get_transient( $this->transient_name );
