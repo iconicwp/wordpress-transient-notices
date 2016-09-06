@@ -40,7 +40,7 @@ class Iconic_Transient_Notices {
 
         if ( $notices = get_transient( $this->transient_name ) ) { ?>
 
-            <?php foreach( $notices as $notice ) { error_log( print_r( $notice, true ) ); ?>
+            <?php foreach( $notices as $notice ) { ?>
 
                 <?php $error_code = str_replace( 'iconic-transient-notice-', '', $notice->get_error_code() ); ?>
 
